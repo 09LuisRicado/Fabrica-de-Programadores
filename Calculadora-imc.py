@@ -25,4 +25,4 @@ try:
   else:
     print("Obesidade grau 3")
 except ValueError:
-  print("Seu  Codígo deu erro")
+  print("Seu  Codígo deu erro pois imc não se divide por 0")
