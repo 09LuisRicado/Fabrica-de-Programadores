@@ -7,8 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1O11tcDv71-VGKUquBdfW6YviXt58Sww_
 """
 
+import sys
 try:
   peso = float(input("Digite seu Peso "))
+  if peso == 0:
+    print("Não divide por 0")
+    sys.exit()
+
   altura = float(input("Digite sua Altura "))
   imc = peso / (altura **2)
   print(f"Seu IMC é: {imc}")
@@ -25,4 +30,6 @@ try:
   else:
     print("Obesidade grau 3")
 except ValueError:
-  print("Seu  Codígo deu erro pois imc não se divide por 0")
+  print("Seu  Codígo deu erro")
+except:
+  print("Erro Seu Numero esta errado Burro")
